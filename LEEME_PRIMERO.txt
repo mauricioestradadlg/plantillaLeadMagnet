@@ -1,0 +1,25 @@
+PLANTILLA GRATUITA PARA RESTAURANTE — PROYECTOS MEG
+====================================================
+
+¡Hola! Esta plantilla está diseñada para que puedas personalizarla sin tocar el código.
+
+SOLO NECESITAS MODIFICAR:
+1) Datos_Restaurante.xlsx
+   - CONTENIDO: textos, WhatsApp, dirección, redes y horario.
+   - DISENO: colores principales.
+   - MENU: platillos, precios, descripciones e imágenes.
+
+2) La carpeta img/
+   - Reemplaza portada.jpg y restaurante.jpg.
+   - Reemplaza platillo1.jpg, platillo2.jpg, etc.
+   - Conserva exactamente los mismos nombres de archivo.
+
+NO NECESITAS MODIFICAR:
+- index.html
+- css/styles.css
+- js/app.js
+
+IMPORTANTE SOBRE LA VISTA LOCAL
+Si abres index.html con doble clic, tu navegador puede impedir que JavaScript lea el Excel por seguridad. La plantilla seguirá mostrando datos de ejemplo. Una vez publicada en GitHub Pages, el Excel se leerá normalmente.
+
+Lee GUIA_GITHUB_PAGES.md para publicar y actualizar tu página sin usar consola.

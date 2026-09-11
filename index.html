@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plantilla gratuita para restaurante, configurable desde Excel." />
+  <title>Restaurante La Mesa</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark">LM</span>
+        <span id="brandNombre">La Mesa</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">Menú</button>
+      <nav id="navLinks" class="nav-links" aria-label="Navegación principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#visitanos">Visítanos</a>
+        <a id="navWhatsapp" class="btn btn-small" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">RESTAURANTE · SABOR · EXPERIENCIAS</p>
+        <h1 id="heroNombre">Restaurante La Mesa</h1>
+        <p id="heroSlogan" class="hero-slogan">Sabor que se comparte</p>
+        <p id="heroDescripcion" class="hero-copy">Cocina honesta, ingredientes frescos y un ambiente para disfrutar.</p>
+        <div class="hero-actions">
+          <a id="heroMenuBtn" class="btn" href="#menu">Ver menú</a>
+          <a id="heroWhatsapp" class="btn btn-ghost" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#nosotros" aria-label="Ir a la siguiente sección">↓</a>
+    </section>
+
+    <section id="nosotros" class="section about-section">
+      <div class="container split-grid">
+        <div class="about-image image-frame">
+          <img src="img/restaurante.jpg" alt="Interior del restaurante" loading="lazy" />
+        </div>
+        <div class="section-copy">
+          <p class="eyebrow">NUESTRA HISTORIA</p>
+          <h2 id="sobreTitulo">Una mesa para volver</h2>
+          <p id="sobreTexto">En La Mesa creemos que comer bien también es compartir historias.</p>
+          <div class="mini-facts">
+            <div><span>Ingredientes</span><strong>Frescos</strong></div>
+            <div><span>Ambiente</span><strong>Acogedor</strong></div>
+            <div><span>Servicio</span><strong>Cercano</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">RECOMENDACIONES</p>
+          <h2>Favoritos de la casa</h2>
+          <p>Modifica platillos, descripciones, precios e imágenes desde la hoja <strong>MENU</strong> del Excel.</p>
+        </div>
+        <div id="menuGrid" class="menu-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-card">
+        <div>
+          <p class="eyebrow">CONTACTO DIRECTO</p>
+          <h2 id="ctaTitulo">¿Listo para visitarnos?</h2>
+          <p id="ctaTexto">Escríbenos por WhatsApp para consultar disponibilidad o resolver cualquier duda.</p>
+        </div>
+        <a id="ctaWhatsapp" class="btn" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="visitanos" class="section visit-section">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow">VISÍTANOS</p>
+          <h2>Te esperamos</h2>
+          <div class="contact-list">
+            <div><span>Dirección</span><strong id="direccion">Av. Ejemplo 123, Monterrey, Nuevo León</strong></div>
+            <div><span>Horario</span><strong id="horario">Lun–Dom · 1:00 PM – 11:00 PM</strong></div>
+            <div><span>Teléfono</span><strong><a id="telefono" href="#">81 1234 5678</a></strong></div>
+            <div><span>Correo</span><strong><a id="email" href="#">hola@restaurantelamesa.mx</a></strong></div>
+          </div>
+          <div class="inline-actions">
+            <a id="mapsLink" class="text-link" href="#" target="_blank" rel="noopener">Abrir en Google Maps ↗</a>
+          </div>
+        </div>
+        <div class="image-frame visit-image">
+          <img src="img/portada.jpg" alt="Platillo del restaurante" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark">LM</span><span id="footerNombre">La Mesa</span></div>
+        <p id="footerAviso">© Restaurante La Mesa. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a id="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="container attribution">
+      <span>Plantilla gratuita desarrollada por</span>
+      <a href="https://www.proyectosmeg.mx/" target="_blank" rel="noopener">Proyectos MEG</a>
+    </div>
+  </footer>
+
+  <div id="configNotice" class="config-notice" role="status" hidden></div>
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
